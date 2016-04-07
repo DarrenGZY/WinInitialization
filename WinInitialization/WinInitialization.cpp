@@ -3,6 +3,9 @@
 
 #include "stdafx.h"
 #include "WinInitialization.h"
+#include "D3DManager.h"
+
+D3DManager D3DMgr;
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wPraram, LPARAM lParam);
 
@@ -59,5 +62,4 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	}
 
 	return DefWindowProc(hwnd, uMsg, wParam, lParam);
-
 }
